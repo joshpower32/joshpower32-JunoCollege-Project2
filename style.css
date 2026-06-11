@@ -222,6 +222,7 @@ main {
     height: 50%; 
     min-width: 230px; 
     border: 5px solid purple;
+    transition: transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease;
 }
 
 .paragraph-wrapper {
@@ -257,7 +258,6 @@ main {
 
 .paragraph-wrapper p:hover {
     color: purple; 
-    
 }
 
 @media (max-width: 850px) {
@@ -284,7 +284,6 @@ main {
         width: 85%; 
         max-height: 330px; 
     }
-
 }
 
 @media (min-width: 850px) {
@@ -294,6 +293,12 @@ main {
         right: 30px; 
         max-width: 400px; 
         max-height: 600px; 
+        z-index: 2;
+    }
+    /* Add shadow and layer elevation on hover */
+    .main-wrapper2 img:hover {
+        z-index: 4;
+        box-shadow: 80px 30px 30px 10px rgba(0, 0, 0, 0.5);
     }
 
     .paragraph-wrapper {
@@ -404,7 +409,6 @@ h4:hover {
     color: purple;
 }
 
-
 @media (max-width: 1100px) {
     .images-row1 {
         flex-direction: column;
@@ -422,9 +426,6 @@ h4:hover {
         object-fit: cover;
     }
 }
-
-
-
 
 /* row2 - Boxing, Crossfit, Strength */
 .images-row2 {
@@ -481,8 +482,6 @@ h4:hover {
     }
 }
 
-
-
 /* images row 2 media */
 @media(max-width: 1100px) {
     .images-row2 {
@@ -493,7 +492,6 @@ h4:hover {
     }
 }
 
-
 /* main-section3 style start */
 .main-section3 {
     width: 100%; 
@@ -502,7 +500,6 @@ h4:hover {
     background-image: url(../Option2-assets/image7.jpg);
     z-index: 1; 
     opacity: 90%;
-    /* border: 3px solid palevioletred;  */
 }
 
 h5 {
@@ -512,7 +509,6 @@ h5 {
     text-align: center; 
     border-bottom: 3px solid purple;
     padding-bottom: 5px; 
-    /* border: 3px solid green; */
 }
 
 h5:hover {
@@ -529,9 +525,7 @@ h5:hover {
     display: flex; 
     position: relative; 
     bottom: 50px; 
-    /* border: 3px solid orange;  */
 }
-
 
 /* Footer */
 footer {
